@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/a"
+        android:src="@drawable/a"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/a"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/ahnaf"
+        android:src="@drawable/ahnaf" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ahnaf"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/contact"
+                android:text="My Contact info:"
+                android:textSize="16sp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="16dp"
+                android:layout_alignParentTop="true"/>
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:id="@+id/phoneicon"
+                android:layout_below="@id/contact"
+                android:src="@drawable/baseline_phone_black_18dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="32dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/phone"
+                android:layout_below="@id/contact"
+                android:text="(780) 281-1473"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="64dp"/>
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:id="@+id/addressicon"
+                android:layout_below="@id/phone"
+                android:src="@drawable/baseline_place_black_18dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="32dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/place"
+                android:layout_below="@id/phone"
+                android:text="64D Mount Royal Crt SW, Calgary AB T3E 7P7"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="64dp"
+                android:layout_marginRight="16dp"/>
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:id="@+id/emailicon"
+                android:layout_below="@id/place"
+                android:src="@drawable/baseline_alternate_email_black_18dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="32dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/email"
+                android:layout_below="@id/place"
+                android:text="ahnafon3@gmail.com"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="64dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/experiance"
+                android:layout_below="@id/email"
+                android:text="My Experiance:"
+                android:textSize="16sp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="16dp"/>
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:id="@+id/mcdicon"
+                android:layout_below="@id/experiance"
+                android:src="@drawable/baseline_fastfood_black_18dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="32dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mcd"
+                android:layout_below="@id/experiance"
+                android:text="Worked at McDonalds as a Crew Member, for 9 months"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="64dp"/>
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:id="@+id/vivinticon"
+                android:layout_below="@id/mcd"
+                android:src="@drawable/vivint"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="32dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/vivint"
+                android:layout_below="@id/mcd"
+                android:text="Worked at Vivint Inc. as a Sales Representative, for 2 months"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="64dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/academics"
+                android:layout_below="@id/vivint"
+                android:text="My Academic Background:"
+                android:textSize="16sp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="16dp"/>
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:id="@+id/android"
+                android:layout_below="@id/academics"
+                android:src="@drawable/baseline_android_black_18dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="32dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/computersci"
+                android:layout_below="@id/academics"
+                android:text="Studying Computer Science (BSc)(General) at University of Alberta"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="64dp"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
